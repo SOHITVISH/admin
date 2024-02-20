@@ -1,33 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+}
+.container{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.input1{
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+transition: border-color 0.3s;
+}
+.input1:focus {
+outline: none; 
+border-color: #007bff; 
+}
+.add-button {
+background-color: #4CAF50;
+border: none; 
+color: white; 
+padding: 10px 20px; 
+text-align: center; 
+text-decoration: none;
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px;
+cursor: pointer; 
+border-radius: 4px; 
+transition-duration: 0.4s; 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.add-button:hover {
+background-color: #035b07; /* Darker green on hover */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.List{
+color: #ffffff;
+font-size: large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+text-transform: capitalize;
+}
+.listData{
+font-weight: bold;
+font-size: large;
+}
+.btn2{
+display: inline-block;
+border: none;
+border: radius 30%;
+background-image: linear-gradient(to right,#83d0c7 ,#1d1d1d);
+padding: 8px 16px; 
+background-color: #4CAF50;
+color: white;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+.btn2:hover {
+background-color: #035b07;
+}
+.removeallbtn{
+ display: inline-block;
+border: none;
+border: radius 30%;
+background-image: linear-gradient(to right,#83d0c7 ,#1d1d1d);
+padding: 8px 16px;
+background-color: #4CAF50; 
+color: white;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s;
+
 }
